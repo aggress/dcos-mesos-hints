@@ -22,11 +22,12 @@ $ curl -H "Content-Type: application/json" -H "Authorization: token=$DCOS_AUTH_T
 
 ### Unreserve static resources
 
-To unreserve static resources on an agent, change <role> & <principle> where required
+To unreserve static resources on an agent, change <role> & <principle> where required,  slaveId needs replacing with each agent/slave ID.
+
 Reference: https://mesos.apache.org/documentation/latest/reservation/
 
 ```
-curl -i \
+$ curl -i \
 
  -d slaveId=df86aa26-aba2-4140-b16a-5e7ea797bbbb-S5 \
  -d resources='[
