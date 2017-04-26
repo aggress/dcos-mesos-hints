@@ -14,7 +14,7 @@ $ DCOS_AUTH_TOKEN=$( curl -s -X POST http://<dcos_url>/acs/api/v1/auth/login \
 
 ### Get agent resource configuration
 
-List the resource configurations for all public and private agents, requires $DOCS_AUTH_TOKEN as an environment variable and <dcos_url>
+List the resource configurations for all public and private agents, requires $DOCS_AUTH_TOKEN as an environment variable and `<dcos_url>`
 
 ```
 $ curl -H "Content-Type: application/json" -H "Authorization: token=$DCOS_AUTH_TOKEN" -X POST http://<dcos_url>/mesos/slaves | jq
@@ -22,7 +22,7 @@ $ curl -H "Content-Type: application/json" -H "Authorization: token=$DCOS_AUTH_T
 
 ### Unreserve static resources
 
-To unreserve static resources on an agent, change `<role>` & `<principle>` where required,  slaveId needs replacing with each agent/slave ID.
+To unreserve static resources on an agent, change `<role>` & `<principle>` where required, `slaveId` needs replacing with each agent/slave ID.
 
 Reference: https://mesos.apache.org/documentation/latest/reservation/
 
