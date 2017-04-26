@@ -2,7 +2,7 @@
 
 ### Get auth Token
 
-Grabs the auth token from the API allowing you use it in other API commands. Replace <dcos_url> with your accessible URL, <user> & <password>
+Grabs the auth token from the API allowing you use it in other API commands. Replace `<dcos_url>` with your accessible URL, `<user>` & `<password>`
 with correct credentials.
 
 ```
@@ -22,7 +22,7 @@ $ curl -H "Content-Type: application/json" -H "Authorization: token=$DCOS_AUTH_T
 
 ### Unreserve static resources
 
-To unreserve static resources on an agent, change <role> & <principle> where required,  slaveId needs replacing with each agent/slave ID.
+To unreserve static resources on an agent, change `<role>` & `<principle>` where required,  slaveId needs replacing with each agent/slave ID.
 
 Reference: https://mesos.apache.org/documentation/latest/reservation/
 
