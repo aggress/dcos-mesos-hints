@@ -1,5 +1,6 @@
 ## Random
 
+
 ### Get auth Token
 
 Grabs the auth token from the API allowing you use it in other API commands. Replace `<dcos_url>` with your accessible URL, `<user>` & `<password>`
@@ -12,6 +13,7 @@ $ DCOS_AUTH_TOKEN=$( curl -s -X POST http://<dcos_url>/acs/api/v1/auth/login \
    | grep token | cut -d ':' -f2 | cut -d '"' -f2)
 ```
 
+
 ### Get agent resource configuration
 
 List the resource configurations for all public and private agents, requires $DOCS_AUTH_TOKEN as an environment variable and `<dcos_url>`
@@ -19,6 +21,7 @@ List the resource configurations for all public and private agents, requires $DO
 ```
 $ curl -H "Content-Type: application/json" -H "Authorization: token=$DCOS_AUTH_TOKEN" -X POST http://<dcos_url>/mesos/slaves | jq
 ```
+
 
 ### Unreserve static resources
 
